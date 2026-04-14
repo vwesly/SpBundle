@@ -30,15 +30,15 @@ light_saml_symfony_bridge:
         entity_id: https://localhost/lightSAML/SPBundle
         credentials:
             -
-                certificate: "%kernel.project_dir%/vendor/javer/lightsaml/web/sp/saml.crt"
-                key:         "%kernel.project_dir%/vendor/javer/lightsaml/web/sp/saml.key"
+                certificate: "%kernel.project_dir%/vendor/kewa/lightsaml/web/sp/saml.crt"
+                key:         "%kernel.project_dir%/vendor/kewa/lightsaml/web/sp/saml.key"
                 password:    ~
     party:
         idp:
             files:
-                - "%kernel.project_dir%/vendor/javer/lightsaml/web/sp/openidp.feide.no.xml"
-                - "%kernel.project_dir%/vendor/javer/lightsaml/web/sp/localhost-lightsaml-lightsaml-idp.xml"
-                - "%kernel.project_dir%/vendor/javer/lightsaml/web/sp/testshib-providers.xml"
+                - "%kernel.project_dir%/vendor/kewa/lightsaml/web/sp/openidp.feide.no.xml"
+                - "%kernel.project_dir%/vendor/kewa/lightsaml/web/sp/localhost-lightsaml-lightsaml-idp.xml"
+                - "%kernel.project_dir%/vendor/kewa/lightsaml/web/sp/testshib-providers.xml"
     store:
         id_state: id_store
 

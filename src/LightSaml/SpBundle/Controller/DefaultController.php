@@ -55,7 +55,7 @@ class DefaultController extends AbstractController
 
     public function loginAction(Request $request): Response
     {
-        $idpEntityId = $request->get('idp');
+        $idpEntityId = $request->query->get('idp');
         if (null === $idpEntityId) {
             return $this->redirect($this->generateUrl($this->container->getParameter('lightsaml_sp.route.discovery')));
         }
